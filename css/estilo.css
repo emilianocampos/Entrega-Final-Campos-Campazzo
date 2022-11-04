@@ -258,10 +258,13 @@ h4 {
         color: #98ff96;
 
     }
-.seccion{
-    padding-left: 200px;
-    gap: 30px;
-}
+
+    .seccion {
+        padding-left: 100px;
+        gap: 30px;
+        
+    }
+
     .hh1 {
 
         font-size: 1.5rem;
@@ -278,35 +281,39 @@ h4 {
 
 
     }
-    .sh2{
+
+    .sh2 {
         font-size: 2.3rem;
     }
-    .card{
+
+    .card {
         width: 190px;
     }
 
-    
+
     .imgh {
         width: 190px;
         border-radius: 10px;
         height: 300px;
         justify-content: center;
     }
-    
+
     .imgh2 {
         width: 190px;
         border-radius: 10px;
         height: 300px;
     }
-    
+
     .imgh3 {
         width: 190px;
         height: 300px;
         border-radius: 10px;
     }
-    .p{
+
+    .p {
         font-size: 1.4rem;
     }
+
     .contenedorfooter {
         width: 100%;
         flex-wrap: wrap;
@@ -327,23 +334,24 @@ h4 {
     p {
         font-size: 0.9rem;
     }
-  
+   
 }
 
-@media screen and (max-width: 589px){
+@media screen and (max-width: 589px) {
     a {
         font-size: 1.2rem;
         text-decoration: none;
         color: #98ff96;
-    
+
     }
-    
+
     .ul {
-      
-        
-      flex-direction: column;
-    
+
+
+        flex-direction: column;
+
     }
+
     .hh1 {
 
         font-size: 1rem;
@@ -351,40 +359,46 @@ h4 {
         align-items: stretch;
     }
 
-    
-    .sh2{
+
+    .sh2 {
         font-size: 1.3rem;
     }
-    .card{
+
+    .card {
         width: 190px;
-        
+
     }
 
-    .seccion{
+    .seccion {
         flex-direction: column;
     }
+
     .imgh {
         width: 190px;
         border-radius: 10px;
         height: 300px;
     }
-    .impit{
+
+    .impit {
         padding: 1px;
     }
+
     .imgh2 {
         width: 190px;
         border-radius: 10px;
         height: 300px;
     }
-    
+
     .imgh3 {
         width: 190px;
         height: 300px;
         border-radius: 10px;
     }
-    .p{
+
+    .p {
         font-size: 1.4rem;
     }
+
     .contenedorfooter {
         width: 100%;
         flex-wrap: wrap;
@@ -402,44 +416,181 @@ h4 {
         font-size: 1rem;
     }
 
-    .tja{
+    .tja {
         width: 50px;
     }
 
     .conthh1 {
         background-color: hsla(104, 100%, 5%, 0.699);
         border-radius: 20px;
-        width: 258px;
+        width: 150px;
         text-align: center;
-        padding-left: 5px;
+        padding-left: 53px;
+
 
 
     }
-    .sh2{
+
+    .logo {
+        width: 50px;
+        padding-left: 10px;
+    }
+
+    .sh2 {
         font-size: 1.4rem;
     }
-    .card{
+
+    .card {
         width: 190px;
-     
+
     }
 
-    
-  
-  
+
+
+
     .cardm {
         display: flex;
         align-items: center;
     }
-    
+
     .comp {
         width: 40px;
     }
-    
+
     .envo {
         width: 40px;
     }
-    
+
     .pp {
         font-size: 1rem;
+    }
+
+    .form {
+        padding: 20px;
+        font-size: 1rem;
+
+    }
+
+}
+
+/*prdo*/
+
+.row {
+    gap: 13px;
+}
+
+/*crearp*/
+
+
+.gridcont {
+    
+    height: 1000px;
+    outline: 2px solid;
+    margin: 200px auto;
+    background-color: #009929;
+    border-radius: 40px;
+    width: 900px;
+
+
+    display: grid;
+
+}
+
+.item {
+    width: 900px;
+    height: 100px;
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.item1 {
+    background-color: #98ff96;
+    height: 100px;
+
+
+}
+
+.item2 {
+    background-color: #98ff96;
+}
+
+.item3 {
+    background-color: #98ff96;
+    height: 200px;
+}
+
+.item4 {
+    background-color: #98ff96;
+}
+
+.item5 {
+    background-color: #98ff96;
+}
+
+.botn {
+    width: 200px;
+    height: 100px;
+    font-size: 2rem;
+    background-color: grey;
+}
+.fuente{
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 900px){
+    .gridcont {
+      
+    
+    
+        width: 500px;
+    
+    }
+    
+    .item {
+        width: 500px;
+    }
+    
+    .txt{
+        font-size: 1.5rem;
+    }
+    
+    .botn {
+        width: 100px;
+        height: 50px;
+        font-size: 1rem;
+        background-color: grey;
+    }
+    
+    
+}
+@media screen and (max-width: 500px){
+    .gridcont {
+      
+    
+    
+        width: 250px;
+    
+    }
+    
+    .item {
+        width: 250px;
+    }
+    
+    .txt{
+        font-size: 1rem;
+    }
+    
+    .botn {
+        width: 100px;
+        height: 50px;
+        font-size: 1rem;
+        background-color: grey;
+    }
+    .sh2{
+        padding: 0;
     }
 }
