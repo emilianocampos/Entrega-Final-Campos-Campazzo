@@ -266,7 +266,11 @@ h4 {
         color: #98ff96;
 
     }
-
+  
+    .logo {
+        width: 50px;
+        padding-left: 10px;
+    }
     .seccion {
         padding-left: 100px;
         gap: 30px;
@@ -601,7 +605,7 @@ h4 {
         background-color: grey;
     }
     .sh2{
-        padding: 0;
+        padding: 40px;
     }
 }
 
