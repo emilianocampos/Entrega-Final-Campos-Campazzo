@@ -1,18 +1,14 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  list-style: none;
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: oblique;
-}
+
+
+@import "pages/reseteo";
+@import "pages/variables";
 
 .cabeza {
   width: 100%;
   height: 600px;
-  background: #52c234;
-  background: -webkit-linear-gradient(to right, #061700, #52c234);
-  background: linear-gradient(to right, rgb(6, 23, 0), #52c234);
+  background: $color-primario;
+  background: -webkit-linear-gradient(to right, #061700, $color-primario);
+  background: linear-gradient(to right, rgb(6, 23, 0), $color-primario);
   background-size: cover;
   background-attachment: fixed;
   position: relative;
@@ -20,6 +16,7 @@
 
 .logo {
   width: 100px;
+
   animation-name: animado;
   animation-duration: 3s;
 }
@@ -28,13 +25,16 @@
   0% {
     transform: scaleX(-1);
   }
+
   50% {
     transform: scaleX(1);
   }
+
   100% {
     transform: scaleX(1);
   }
 }
+
 .wave {
   position: absolute;
   bottom: 0;
@@ -44,16 +44,17 @@
 }
 
 .sh2 {
-  color: #98ff96;
+  color: $color-secundario;
 }
 
 a {
   font-size: 1.6rem;
   text-decoration: none;
-  color: #98ff96;
-}
-a:hover {
-  color: white;
+  color: $color-secundario;
+
+  &:hover {
+    color: white;
+  }
 }
 
 .ul {
@@ -71,27 +72,31 @@ a:hover {
 }
 
 .conthh1 {
-  background-color: hsla(104deg, 100%, 5%, 0.699);
+  background-color: hsla(104, 100%, 5%, 0.699);
   border-radius: 300px;
   width: 900px;
   text-align: center;
   padding-left: 200px;
-  background: #52c234;
+  background: $color-primario;
+
   /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #061700, #52c234);
+
   /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #061700, #52c234);
+
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   display: flex;
 }
 
 /*main*/
+
 main {
   background-color: black;
 }
 
 .sh2 {
-  color: #98ff96;
+  color: $color-secundario;
   font-size: 4rem;
   text-align: center;
   padding: 150px;
@@ -109,9 +114,10 @@ main {
   background-color: #5ccb5f;
   width: 250px;
   border-radius: 30px;
-}
-.card:hover {
-  transform: translatey(-20px);
+
+  &:hover {
+    transform: translatey(-20px);
+  }
 }
 
 .imgh,
@@ -132,7 +138,7 @@ main {
 }
 
 .btna {
-  background-color: #98ff96;
+  background-color: $color-secundario;
 }
 
 .btn {
@@ -211,14 +217,17 @@ footer {
   text-align: center;
 }
 
-.conterfoot h4 {
-  color: #fff;
-  border-bottom: 3px solid hsl(316deg, 83%, 57%);
-  padding-bottom: 5px;
-  margin-bottom: 10px;
-}
-.conterfoot p {
-  color: #fff;
+.conterfoot {
+  h4 {
+    color: #fff;
+    border-bottom: 3px solid hsl(316, 83%, 57%);
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    color: #fff;
+  }
 }
 
 .titlefinal {
@@ -229,11 +238,11 @@ footer {
 .lol,
 .lil {
   transition-duration: 2s;
-}
-.lol:hover,
-.lil:hover {
-  transform: rotate(360deg);
-  border-radius: 15px;
+
+  &:hover {
+    transform: rotate(360deg);
+    border-radius: 15px;
+  }
 }
 
 h4 {
@@ -244,172 +253,215 @@ h4 {
   a {
     font-size: 1rem;
     text-decoration: none;
-    color: #98ff96;
+    color: $color-secundario;
   }
+
   .logo {
     width: 50px;
     padding-left: 10px;
   }
+
   .seccion {
     padding-left: 100px;
     gap: 30px;
   }
+
   .hh1 {
     font-size: 1.5rem;
     display: flex;
     align-items: center;
   }
+
   .conthh1 {
-    background-color: hsla(104deg, 100%, 5%, 0.699);
+    background-color: hsla(104, 100%, 5%, 0.699);
     border-radius: 300px;
     width: 530px;
     text-align: center;
     padding-left: 100px;
   }
+
   .sh2 {
     font-size: 2.3rem;
   }
+
   .card {
     width: 190px;
   }
+
   .imgh {
     width: 190px;
     border-radius: 10px;
     height: 300px;
     justify-content: center;
   }
+
   .imgh2 {
     width: 190px;
     border-radius: 10px;
     height: 300px;
   }
+
   .imgh3 {
     width: 190px;
     height: 300px;
     border-radius: 10px;
   }
+
   .pp {
     font-size: 1rem;
   }
+
   .p {
     font-size: 1.4rem;
   }
+
   .contenedorfooter {
     width: 100%;
     flex-wrap: wrap;
   }
+
   .conteer {
     display: flex;
   }
+
   .titlefinal {
     font-size: 1.2rem;
   }
+
   h4 {
     font-size: 1rem;
   }
+
   p {
     font-size: 0.9rem;
   }
 }
+
 @media screen and (max-width: 589px) {
   a {
     font-size: 1.2rem;
     text-decoration: none;
     color: #98ff96;
   }
+
   .ul {
     flex-direction: column;
   }
+
   .hh1 {
     font-size: 1rem;
     display: flex;
     align-items: stretch;
   }
+
   .sh2 {
     font-size: 1.3rem;
   }
+
   .card {
     width: 100px;
   }
+
   .seccion {
     flex-direction: column;
   }
+
   .imgh {
     width: 190px;
     border-radius: 10px;
     height: 300px;
   }
+
   .impit {
     padding: 1px;
   }
+
   .imgh2 {
     width: 190px;
     border-radius: 10px;
     height: 300px;
   }
+
   .imgh3 {
     width: 190px;
     height: 300px;
     border-radius: 10px;
   }
+
   .p {
     font-size: 1.4rem;
   }
+
   .contenedorfooter {
     width: 100%;
     flex-wrap: wrap;
   }
+
   .conteer {
     display: flex;
   }
+
   .titlefinal {
     font-size: 1.2rem;
   }
+
   h4 {
     font-size: 1rem;
   }
+
   .tja {
     width: 50px;
   }
+
   .conthh1 {
-    background-color: hsla(104deg, 100%, 5%, 0.699);
+    background-color: hsla(104, 100%, 5%, 0.699);
     border-radius: 20px;
     width: 150px;
     text-align: center;
     padding-left: 53px;
   }
+
   .logo {
     width: 50px;
     padding-left: 10px;
   }
+
   .sh2 {
     font-size: 1.4rem;
   }
+
   .card {
     width: 190px;
   }
+
   .cardm {
     display: flex;
     align-items: center;
   }
+
   .comp,
   .envo {
     width: 40px;
   }
+
   .pp {
     font-size: 1rem;
   }
+
   .form {
     padding: 20px;
     font-size: 1rem;
   }
 }
+
 /*prdo*/
+
 .row {
   gap: 13px;
 }
 
 /*crearp*/
+
 .gridcont {
   height: 1000px;
   outline: 2px solid;
@@ -432,30 +484,30 @@ h4 {
 }
 
 .item1 {
-  background-color: #98ff96;
+  background-color: $color-secundario;
   height: 100px;
   border-radius: 35px;
 }
 
 .item2 {
-  background-color: #98ff96;
+  background-color: $color-secundario;
 }
 
 .item3 {
-  background-color: #98ff96;
+  background-color: $color-secundario;
   height: 200px;
 }
 
 .item4,
 .item5 {
-  background-color: #98ff96;
+  background-color: $color-secundario;
 }
 
 .botn {
   width: 200px;
   height: 100px;
   font-size: 2rem;
-  background-color: #98ff96;
+  background-color: $color-secundario;
   color: rgb(0, 0, 0);
   border: #061700;
   border-radius: 20px;
@@ -469,49 +521,62 @@ h4 {
   .gridcont {
     width: 500px;
   }
+
   .item {
     width: 500px;
     font-size: 1rem;
     text-align: center;
   }
+
   .item1 {
     height: 200px;
   }
+
   .lavels {
     font-size: 1rem;
   }
+
   .txt {
     font-size: 2rem;
   }
+
   .botn {
     width: 100px;
     height: 50px;
     font-size: 1rem;
     background-color: grey;
   }
+
   .form {
     padding: 10px;
   }
 }
+
 @media screen and (max-width: 500px) {
+
   .gridcont,
   .item {
     width: 250px;
   }
+
   .txt {
     font-size: 1rem;
   }
+
   .botn {
     width: 100px;
     height: 50px;
     font-size: 1rem;
     background-color: grey;
   }
+
   .sh2 {
     padding: 40px;
   }
 }
+
 /*contacto*/
+
 .etiq {
   color: rgb(3, 3, 3);
   font-size: 2rem;
@@ -534,62 +599,72 @@ h4 {
   .etiq {
     font-size: 1.5rem;
   }
+
   .contenedorcp {
     background-color: #009929;
     text-align: center;
     width: 500px;
     margin: 100px auto;
   }
+
   .mapa {
     width: 500px;
   }
 }
+
 @media screen and (max-width: 500px) {
   .etiq {
     font-size: 1rem;
   }
+
   .contenedorcp {
     background-color: #009929;
     text-align: center;
     width: 250px;
     margin: 70px auto;
   }
+
   .mapa {
     width: 355px;
   }
 }
+
 /*au*/
+
 .contenedoas {
   background-color: #009929;
   text-align: center;
   width: 950px;
   margin: 70px auto;
   border-radius: 20px;
-}
-.contenedoas p {
-  font-size: 2rem;
+
+  p {
+    font-size: 2rem;
+  }
 }
 
 @media screen and (max-width: 900px) {
   .contenedoas {
     text-align: center;
     width: 500px;
-  }
-  .contenedoas p {
-    font-size: 1.5rem;
+
+    p {
+      font-size: 1.5rem;
+    }
   }
 }
+
 @media screen and (max-width: 500px) {
   .contenedoas {
     text-align: center;
     width: 250px;
+
+    p {
+      font-size: 1rem;
+    }
   }
-  .contenedoas p {
-    font-size: 1rem;
-  }
+
   .h3 {
     font-size: 1.2rem;
   }
 }
-
-/*# sourceMappingURL=estilo.css.map */
