@@ -177,7 +177,7 @@ main {
 }
 
 .mfot {
-  background-color: #b32b85;
+  background-color: #1ca381;
   text-align: center;
   height: 300px;
 }
@@ -220,7 +220,7 @@ footer {
 .conterfoot {
   h4 {
     color: #fff;
-    border-bottom: 3px solid hsl(316, 83%, 57%);
+    border-bottom: 3px solid #1ca381;
     padding-bottom: 5px;
     margin-bottom: 10px;
   }
@@ -261,10 +261,7 @@ h4 {
     padding-left: 10px;
   }
 
-  .seccion {
-    padding-left: 100px;
-    gap: 30px;
-  }
+  
 
   .hh1 {
     font-size: 1.5rem;
@@ -347,7 +344,9 @@ h4 {
   .ul {
     flex-direction: column;
   }
-
+.mid{
+  flex-direction: column;
+}
   .hh1 {
     font-size: 1rem;
     display: flex;
@@ -358,18 +357,21 @@ h4 {
     font-size: 1.3rem;
   }
 
-  .card {
-    width: 100px;
-  }
+
 
   .seccion {
     flex-direction: column;
+    padding-left: 54px;
+    gap: 82px;
+    display: grid;
+
   }
 
   .imgh {
-    width: 190px;
-    border-radius: 10px;
-    height: 300px;
+    width: 117px;
+    border-radius: 30px;
+    height: 312px;
+    display: inline;
   }
 
   .impit {
@@ -377,13 +379,13 @@ h4 {
   }
 
   .imgh2 {
-    width: 190px;
+    width: 140px;
     border-radius: 10px;
     height: 300px;
   }
 
   .imgh3 {
-    width: 190px;
+    width: 140px;
     height: 300px;
     border-radius: 10px;
   }
@@ -394,11 +396,14 @@ h4 {
 
   .contenedorfooter {
     width: 100%;
-    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
   }
 
   .conteer {
     display: flex;
+    justify-content: center;
   }
 
   .titlefinal {
@@ -431,7 +436,8 @@ h4 {
   }
 
   .card {
-    width: 190px;
+    width: 155px;
+    height: 414px;
   }
 
   .cardm {
@@ -515,6 +521,13 @@ h4 {
 
 .fuente {
   font-size: 1rem;
+}
+.mid{
+  background-color: #006414;
+  border-radius: 2px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 90px;
 }
 
 @media screen and (max-width: 900px) {
